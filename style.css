@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    background: var(--game-bg);
+    transition: background-color 0.2s ease-in-out;
+}
+
+body.game-over {
+    background: none;
+    background-color: red !important;
+}
+
+:root {
+    --game-bg: linear-gradient(215deg, #7BA5D9 10%, #FF8C7A);
+}
+
+body.game-over {
+    background: red !important;
+}
+
+body.white-bg {
+    background: white !important; /* White background after Game Over */
+}
+
+body.game-start {
+    background: linear-gradient(215deg, #7BA5D9 10%, #FF8C7A);
+}
+
+.btn{
+    height:200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2rem;
+}
+.btn-contaner{
+    display: flex;
+    justify-content: center;
+}
+.red{
+    background-color: #d95980;
+}
+.yellow{
+    background-color:#f99b45 ;
+}
+.green{
+    background-color: #63aac0;
+}
+.purple{
+    background-color: #819ff9;
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: green;
+}
+
+body.game-normal {
+    background: linear-gradient(215deg, #7BA5D9 10%, #FF8C7A); /* Restore gradient */
+}
+
+body.game-over {
+    background: red !important;
+}
