@@ -20,7 +20,7 @@ function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
-    },350);
+    },800);
 }
 
 function userFlash(btn){
@@ -110,4 +110,5 @@ function reset(){
     gameSeq=[];
     userSeq=[];
     level = 0;
+
 }
